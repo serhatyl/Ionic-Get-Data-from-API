@@ -1,14 +1,19 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Rest API
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let people of peopleData">
+      <ion-avatar item-left>
+     <!--<img src="{{people.picture.thumbnail}}">-->
+      </ion-avatar>
+      <h2><b>{{people.byline}}</b></h2>
+    </ion-item>
+  </ion-list>
 </ion-content>
